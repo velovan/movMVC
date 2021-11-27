@@ -11,6 +11,7 @@ import com.jos.model.Movie;
 
 @Repository
 public class MovieDaoImpl implements MovieDao {
+	
 	@Autowired
 	private SessionFactory session;
 	
