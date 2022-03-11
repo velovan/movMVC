@@ -17,27 +17,27 @@ public class MovieDaoImpl implements MovieDao {
 	
 	@Override
 	public void add(Movie movie) {
-		session.getCurrentSession().save(movie);
+	      session.getCurrentSession().save(movie);
 	}
 
 	@Override
 	public void edit(Movie movie) {
-		session.getCurrentSession().update(movie);
+	      session.getCurrentSession().update(movie);
 	}
 
 	@Override
 	public void delete(int id) {		
-		session.getCurrentSession().delete(getMovie(id));
+	      session.getCurrentSession().delete(getMovie(id));
 	}
 
 	@Override
 	public Movie getMovie(int id) {
-		return (Movie)session.getCurrentSession().get(Movie.class, id);
+	      return (Movie)session.getCurrentSession().get(Movie.class, id);
 	}
 
 	@Override
 	public List getAllMovie() {
-		return session.getCurrentSession().createQuery("from Movie").list();
+	      return session.getCurrentSession().createQuery("from Movie").list();
 	}
 
 }
