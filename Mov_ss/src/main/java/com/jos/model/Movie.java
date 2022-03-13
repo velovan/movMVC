@@ -17,7 +17,6 @@ public class Movie {
 	@Column
 	private String director;
 	
-	
 //	@Column
 //	private int yearLevel;
 	
@@ -54,6 +53,5 @@ public class Movie {
 //	public void setYearLevel(int yearLevel) {
 //		this.yearLevel = yearLevel;
 //	}
-	
 	
 }
