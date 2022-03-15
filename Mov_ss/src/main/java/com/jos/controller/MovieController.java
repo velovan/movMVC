@@ -25,7 +25,8 @@ public class MovieController {
 		map.put("movieList", movieService.getAllMovie());
 		return "movie";
 		
-	}                           
+	}        
+	
 	/*student.do*/
 	@RequestMapping(value="/movie.do", method=RequestMethod.POST)
 	public String doActions(@ModelAttribute Movie movie, BindingResult result, @RequestParam String action, Map<String, Object> map){
@@ -51,6 +52,5 @@ public class MovieController {
 		map.put("movie", movieResult);
 		map.put("movieList", movieService.getAllMovie());
 		return "movie";
-	}
-	
+	}	
 }
