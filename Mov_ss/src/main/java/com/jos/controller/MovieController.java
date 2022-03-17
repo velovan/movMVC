@@ -23,8 +23,7 @@ public class MovieController {
 		Movie movie = new Movie();
 		map.put("movie", movie);
 		map.put("movieList", movieService.getAllMovie());
-		return "movie";
-		
+		return "movie";	
 	}        
 	
 	/*student.do*/
@@ -52,5 +51,6 @@ public class MovieController {
 		map.put("movie", movieResult);
 		map.put("movieList", movieService.getAllMovie());
 		return "movie";
-	}	
+	}
+	
 }
